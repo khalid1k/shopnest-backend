@@ -1,98 +1,90 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+## ShopNest Backend 🧱
+## Node version : 22
+ShopNest Backend is a robust and scalable server-side application for an online shopping platform. It is built using **NestJS** with a strong focus on clean architecture, modular design, and real-world backend practices.
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+This backend handles authentication, product management, orders, carts, and real-time updates using WebSockets. It is designed as a learning-focused project while following production-grade patterns.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+### 🛠 Tech Stack
+- **NestJS** — Node.js framework for scalable APIs
+- **Drizzle ORM** — Type-safe database queries
+- **PostgreSQL** — Relational database
+- **Socket.IO** — Real-time events (orders, cart updates)
+- **TypeScript** — End-to-end type safety
 
-## Description
+### ✨ Features
+- User authentication & authorization
+- Product & category management
+- Shopping cart & order system
+- Real-time updates using Socket.IO
+- Modular and maintainable architecture
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+### 🎯 Purpose
+This project is built for **hands-on practice** and to demonstrate backend engineering skills using modern tools and best practices.
 
-## Project setup
+🔗 Frontend Repository: [shopnest-frontend]
+🎨 shopnest-frontend — Repository Description
+Short GitHub Description (About section):
 
-```bash
-$ npm install
-```
+ShopNest Frontend — A modern e-commerce frontend built with Next.js, React Query, Zustand, and Socket.IO for a fast and real-time shopping experience.
 
-## Compile and run the project
+Long README Description:
 
-```bash
-# development
-$ npm run start
+md
+Copy code
+## ShopNest Frontend 🎨
 
-# watch mode
-$ npm run start:dev
+ShopNest Frontend is a modern and performant web application for an online shopping platform. Built with **Next.js**, it focuses on user experience, efficient state management, and seamless communication with the backend.
 
-# production mode
-$ npm run start:prod
-```
+The frontend consumes REST APIs and real-time WebSocket events to deliver a smooth, responsive shopping experience.
 
-## Run tests
+### 🛠 Tech Stack
+- **Next.js** — React framework with App Router
+- **React Query (TanStack Query)** — Server state management
+- **Zustand** — Client state management
+- **Socket.IO Client** — Real-time communication
+- **TypeScript** — Strong typing and maintainability
 
-```bash
-# unit tests
-$ npm run test
+### ✨ Features
+- Product browsing & search
+- Shopping cart management
+- Real-time order & cart updates
+- Optimized data fetching and caching
+- Clean and scalable component architecture
 
-# e2e tests
-$ npm run test:e2e
+### 🎯 Purpose
+This project is created for **practice and skill-building**, showcasing modern frontend patterns used in real-world e-commerce applications.
 
-# test coverage
-$ npm run test:cov
-```
+🔗 Backend Repository: [shopnest-backend]
+🧠 Pro Tips (Optional but Recommended)
+GitHub Topics (Add These)
+graphql
+Copy code
+nestjs
+nextjs
+ecommerce
+typescript
+react-query
+zustand
+socket-io
+drizzle-orm
+postgresql
+Repo Tags
+learning-project
 
-## Deployment
+portfolio
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+fullstack
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+If you want, next I can:
 
-```bash
-$ npm install -g @nestjs/mau
-$ mau deploy
-```
+Write a single unified ShopNest project overview
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+Create API documentation structure
 
-## Resources
+Help you define Socket.IO event names
 
-Check out a few resources that may come in handy when working with NestJS:
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
 
-## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
