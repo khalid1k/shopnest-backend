@@ -4,7 +4,6 @@ import { Pool } from 'pg';
 import { drizzle } from 'drizzle-orm/node-postgres';
 import * as schema from './schema';
 
-
 @Injectable()
 export class DatabaseService implements OnModuleInit {
   public readonly db: ReturnType<typeof drizzle>;
@@ -12,9 +11,11 @@ export class DatabaseService implements OnModuleInit {
 
   constructor(private readonly configService: ConfigService) {
     const databaseUrl = this.configService.get<string>('DATABASE_URL');
-    
+
     if (!databaseUrl) {
-      throw new Error('DATABASE_URL must be set. Did you forget to provision a database?');
+      throw new Error(
+        'DATABASE_URL must be set. Did you forget to provision a database?',
+      );
     }
 
     this.pool = new Pool({ connectionString: databaseUrl });
@@ -23,7 +24,7 @@ export class DatabaseService implements OnModuleInit {
 
   async onModuleInit() {
     console.log('✓ Database connection initialized');
-    
+
     // Test connection
     try {
       await this.pool.query('SELECT NOW()');
