@@ -7,8 +7,7 @@ import {
   MaxLength,
 } from 'class-validator';
 
-export class loginDto {
-
+export class LoginDto {
   @ApiProperty({
     example: 'khalid@example.com',
     description: 'Unique email address of the user',

@@ -19,11 +19,9 @@ export class UserResponseDto {
   })
   email: string;
 
-   @ApiProperty({
+  @ApiProperty({
     example: 'bhjuklsljdkdkjdl',
     description: 'accessToken to verify the user',
   })
   accessToken: string;
-
- 
 }

@@ -24,6 +24,4 @@ export class UserLoginResponseDto {
     description: 'accessToken that is used for authentication',
   })
   accessToken: string;
-
- 
 }
